@@ -1,0 +1,507 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7A179AD2-C605-4D2A-91A0-C838EDAD1E34}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>POS_FINAL_REYES.My.MyApplication</StartupObject>
+    <RootNamespace>POS_FINAL_REYES</RootNamespace>
+    <AssemblyName>POS-FINAL-REYES</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>POS-FINAL-REYES.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>POS-FINAL-REYES.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>POS-FINAL-REYES.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>POS-FINAL-REYES.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x64\Debug\Bunifu.UI.WinForms.1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine">
+      <HintPath>..\..\..\..\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x64\Debug\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x64\Debug\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.barcodes, Version=8.0.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\itext.8.0.2\lib\net461\itext.barcodes.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.bouncy-castle-connector, Version=8.0.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\itext.8.0.2\lib\net461\itext.bouncy-castle-connector.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.commons, Version=8.0.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\itext.commons.8.0.2\lib\net461\itext.commons.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.forms, Version=8.0.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\itext.8.0.2\lib\net461\itext.forms.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.io, Version=8.0.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\itext.8.0.2\lib\net461\itext.io.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.kernel, Version=8.0.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\itext.8.0.2\lib\net461\itext.kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.layout, Version=8.0.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\itext.8.0.2\lib\net461\itext.layout.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.pdfa, Version=8.0.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\itext.8.0.2\lib\net461\itext.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.sign, Version=8.0.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\itext.8.0.2\lib\net461\itext.sign.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.styledxmlparser, Version=8.0.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\itext.8.0.2\lib\net461\itext.styledxmlparser.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.svg, Version=8.0.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\itext.8.0.2\lib\net461\itext.svg.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.DependencyInjection.5.0.0\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.DependencyInjection.Abstractions.5.0.0\lib\net461\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Logging.5.0.0\lib\net461\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Logging.Abstractions.5.0.0\lib\net461\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Options.5.0.0\lib\net461\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Primitives.5.0.0\lib\net461\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Diagnostics.DiagnosticSource.5.0.0\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Computing\AddProducts.Designer.vb">
+      <DependentUpon>AddProducts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Computing\AddProducts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Computing\AddUsers.Designer.vb">
+      <DependentUpon>AddUsers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Computing\AddUsers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Computing\frmPrint.Designer.vb">
+      <DependentUpon>frmPrint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Computing\frmPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Computing\Inquirypanel.Designer.vb">
+      <DependentUpon>Inquirypanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Computing\Inquirypanel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Computing\printerchecker.Designer.vb">
+      <DependentUpon>printerchecker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Computing\printerchecker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Computing\UpdateProducts.Designer.vb">
+      <DependentUpon>UpdateProducts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Computing\UpdateProducts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Computing\UpdateUsers.Designer.vb">
+      <DependentUpon>UpdateUsers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Computing\UpdateUsers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Computing\UsersInfo.Designer.vb">
+      <DependentUpon>UsersInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Computing\UsersInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPayment.Designer.vb">
+      <DependentUpon>frmPayment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPayment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPOS.Designer.vb">
+      <DependentUpon>frmPOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dbconnection.vb" />
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainDashboard.Designer.vb">
+      <DependentUpon>MainDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modaling\ProductInfo.Designer.vb">
+      <DependentUpon>ProductInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modaling\ProductInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modaling\SalesDetails.Designer.vb">
+      <DependentUpon>SalesDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modaling\SalesDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="msgbox\vbinformationpanel.Designer.vb">
+      <DependentUpon>vbinformationpanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="msgbox\vbinformationpanel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ResultPrintchecker.Designer.vb">
+      <DependentUpon>ResultPrintchecker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ResultPrintchecker.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SubButtons\ProductsPanel.Designer.vb">
+      <DependentUpon>ProductsPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SubButtons\ProductsPanel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubButtons\Reports.Designer.vb">
+      <DependentUpon>Reports.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SubButtons\Reports.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubButtons\SettingsPanel.Designer.vb">
+      <DependentUpon>SettingsPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SubButtons\SettingsPanel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubButtons\UsersPanel.Designer.vb">
+      <DependentUpon>UsersPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SubButtons\UsersPanel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin\Backupdb.Designer.vb">
+      <DependentUpon>Backupdb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdmin\Backupdb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin\ChangePass.Designer.vb">
+      <DependentUpon>ChangePass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdmin\ChangePass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Computing\AddProducts.resx">
+      <DependentUpon>AddProducts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Computing\AddUsers.resx">
+      <DependentUpon>AddUsers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Computing\frmPrint.resx">
+      <DependentUpon>frmPrint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Computing\Inquirypanel.resx">
+      <DependentUpon>Inquirypanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Computing\printerchecker.resx">
+      <DependentUpon>printerchecker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Computing\UpdateProducts.resx">
+      <DependentUpon>UpdateProducts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Computing\UpdateUsers.resx">
+      <DependentUpon>UpdateUsers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Computing\UsersInfo.resx">
+      <DependentUpon>UsersInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPayment.resx">
+      <DependentUpon>frmPayment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPOS.resx">
+      <DependentUpon>frmPOS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainDashboard.resx">
+      <DependentUpon>MainDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modaling\ProductInfo.resx">
+      <DependentUpon>ProductInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modaling\SalesDetails.resx">
+      <DependentUpon>SalesDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="msgbox\vbinformationpanel.resx">
+      <DependentUpon>vbinformationpanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultPrintchecker.resx">
+      <DependentUpon>ResultPrintchecker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubButtons\ProductsPanel.resx">
+      <DependentUpon>ProductsPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubButtons\Reports.resx">
+      <DependentUpon>Reports.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubButtons\SettingsPanel.resx">
+      <DependentUpon>SettingsPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubButtons\UsersPanel.resx">
+      <DependentUpon>UsersPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuperAdmin\Backupdb.resx">
+      <DependentUpon>Backupdb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuperAdmin\ChangePass.resx">
+      <DependentUpon>ChangePass.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\icons8-customer-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\password-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vbinformatios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pfinalogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoutlogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\homelogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Manageuserslogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Userslogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Productslogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reportslogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inquiry logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inventorylogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settingslogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Userslogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\returnlogo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

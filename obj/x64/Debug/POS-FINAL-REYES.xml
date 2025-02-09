@@ -1,0 +1,146 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+POS-FINAL-REYES
+</name>
+</assembly>
+<members>
+<member name="T:POS_FINAL_REYES.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:POS_FINAL_REYES.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:POS_FINAL_REYES.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:POS_FINAL_REYES.My.Resources.Resources.check">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:POS_FINAL_REYES.My.Resources.Resources.error_white">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:POS_FINAL_REYES.My.Resources.Resources.homelogo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:POS_FINAL_REYES.My.Resources.Resources.icons8_customer_24">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:POS_FINAL_REYES.My.Resources.Resources.info">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:POS_FINAL_REYES.My.Resources.Resources.Inquiry_logo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:POS_FINAL_REYES.My.Resources.Resources.Inventorylogo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:POS_FINAL_REYES.My.Resources.Resources.logoutlogo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:POS_FINAL_REYES.My.Resources.Resources.Manageuserslogo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:POS_FINAL_REYES.My.Resources.Resources.padlock">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:POS_FINAL_REYES.My.Resources.Resources.password_logo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:POS_FINAL_REYES.My.Resources.Resources.pfinalogo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:POS_FINAL_REYES.My.Resources.Resources.Plogo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:POS_FINAL_REYES.My.Resources.Resources.Productslogo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:POS_FINAL_REYES.My.Resources.Resources.profile">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:POS_FINAL_REYES.My.Resources.Resources.reportslogo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:POS_FINAL_REYES.My.Resources.Resources.returnlogo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:POS_FINAL_REYES.My.Resources.Resources.Settingslogo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:POS_FINAL_REYES.My.Resources.Resources.show">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:POS_FINAL_REYES.My.Resources.Resources.user">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:POS_FINAL_REYES.My.Resources.Resources.usermain">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:POS_FINAL_REYES.My.Resources.Resources.Userslogin">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:POS_FINAL_REYES.My.Resources.Resources.Userslogo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:POS_FINAL_REYES.My.Resources.Resources.vbinformatios">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+</members>
+</doc>
